@@ -1,0 +1,31 @@
+fields:
+    name:
+        label: 'Полное название'
+        span: auto
+        type: text
+    slug:
+        label: URL-ссылка
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    short_name:
+        label: Сокращение
+        span: auto
+        type: text
+    location:
+        label: Город
+        options:
+            Ростов-на-Дону: Ростов-на-Дону
+            Таганрог: Таганрог
+            Новочеркасск: Новочеркасск
+            Шахты: Шахты
+            Батайск: Батайск
+        span: auto
+        type: dropdown
+    logo:
+        label: Логотип
+        mode: file
+        span: auto
+        type: mediafinder

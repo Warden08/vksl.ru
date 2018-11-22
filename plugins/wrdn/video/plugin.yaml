@@ -1,0 +1,20 @@
+plugin:
+    name: 'wrdn.video::lang.plugin.name'
+    description: 'wrdn.video::lang.plugin.description'
+    author: wrdn
+    icon: oc-icon-youtube-play
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Видео
+        url: wrdn/video/videos
+        icon: icon-youtube-play
+        sideMenu:
+            side-menu-item:
+                label: 'Добавить видео'
+                url: wrdn/video/videos/create
+                icon: icon-plus
+            side-menu-item2:
+                label: 'Все видео'
+                url: wrdn/video/videos
+                icon: icon-youtube-play

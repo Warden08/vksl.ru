@@ -1,0 +1,12 @@
+list: $/wrdn/league/models/university/columns.yaml
+modelClass: wrdn\League\Models\University
+title: Universities
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'wrdn/league/universities/update/:id'

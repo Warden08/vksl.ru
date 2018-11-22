@@ -1,0 +1,21 @@
+fields:
+    team_name:
+        label: 'Название команды'
+        span: auto
+        type: text
+    universities:
+        label: 'Образовательное учреждение'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    game:
+        label: Дисциплина
+        options:
+            'Dota 2': 'Dota 2'
+            'CS:GO': 'CS:GO'
+            Artifact: Artifact
+            Warface: Warface
+            Hearthstone: Hearthstone
+        span: auto
+        type: dropdown

@@ -1,0 +1,24 @@
+plugin:
+    name: 'wrdn.league::lang.plugin.name'
+    description: 'wrdn.league::lang.plugin.description'
+    author: wrdn
+    icon: oc-icon-fire
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Лига
+        url: wrdn/league/universities
+        icon: icon-fire
+        sideMenu:
+            side-menu-item:
+                label: Университеты
+                url: wrdn/league/universities
+                icon: icon-university
+            side-menu-item2:
+                label: Команды
+                url: wrdn/league/teams
+                icon: icon-gear
+            side-menu-item3:
+                label: Игроки
+                url: wrdn/league/players
+                icon: icon-male

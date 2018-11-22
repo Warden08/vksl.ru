@@ -1,0 +1,24 @@
+title = "Teams"
+url = "/teams"
+layout = "generic"
+is_hidden = 0
+==
+<?php
+use Wrdn\League\Models\University;
+    function onStart() {
+        $teams = University::get();
+        $this['teams'] = $teams;
+    }
+?>
+==
+<div class="box alt">
+    <div class="row uniform">
+        {% for team in teams %}
+        <div class="4u"><span class="image fit"><img src="/storage/app/media{{team.logo}}" alt="">
+            {{team.short_name}}
+        </span>
+            <small>{{team.location}}</small>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,4 @@
+title: Players
+modelClass: wrdn\League\Models\Player
+toolbar:
+    buttons: reorder_toolbar

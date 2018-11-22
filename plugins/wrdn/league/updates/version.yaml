@@ -1,0 +1,32 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table wrdn_league_teams'
+    - builder_table_create_wrdn_league_teams.php
+1.0.3:
+    - 'Created table wrdn_league_universities'
+    - builder_table_create_wrdn_league_universities.php
+1.0.4:
+    - 'Created table wrdn_league_players'
+    - builder_table_create_wrdn_league_players.php
+1.0.5:
+    - 'Created table wrdn_league_players_teams'
+    - builder_table_create_wrdn_league_players_teams.php
+1.0.6:
+    - 'Created table wrdn_league_teams_universities'
+    - builder_table_create_wrdn_league_teams_universities.php
+1.0.7:
+    - 'Updated table wrdn_league_universities'
+    - builder_table_update_wrdn_league_universities.php
+1.0.8:
+    - 'Updated table wrdn_league_teams'
+    - builder_table_update_wrdn_league_teams.php
+1.0.9:
+    - 'Updated table wrdn_league_universities'
+    - builder_table_update_wrdn_league_universities_2.php
+1.0.10:
+    - 'Updated table wrdn_league_teams'
+    - builder_table_update_wrdn_league_teams_2.php
+1.0.11:
+    - 'Updated table wrdn_league_universities'
+    - builder_table_update_wrdn_league_universities_3.php

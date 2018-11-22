@@ -1,0 +1,10 @@
+name: Videos
+form: $/wrdn/video/models/video/fields.yaml
+modelClass: wrdn\video\Models\Video
+defaultRedirect: wrdn/video/videos
+create:
+    redirect: 'wrdn/video/videos/update/:id'
+    redirectClose: wrdn/video/videos
+update:
+    redirect: wrdn/video/videos
+    redirectClose: wrdn/video/videos

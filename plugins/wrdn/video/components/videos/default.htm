@@ -1,0 +1,16 @@
+{% set videos = __SELF__.videos %}
+<div class="card my-4">
+    <div class="card-header">Видео</div>
+    <div class="card-body">
+        <div class="card-streams">
+            {% for video in videos %}
+            <div class="col-xs-6 col-md-6" style="padding: 0 4px">
+                <a class="video-entry" href="/video/{{video.slug}}">
+                    <div class="about">{{video.name}}</div>
+                    <img src="{{video.img}}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

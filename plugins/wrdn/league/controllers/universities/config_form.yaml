@@ -1,0 +1,10 @@
+name: Universities
+form: $/wrdn/league/models/university/fields.yaml
+modelClass: wrdn\League\Models\University
+defaultRedirect: wrdn/league/universities
+create:
+    redirect: 'wrdn/league/universities/update/:id'
+    redirectClose: wrdn/league/universities
+update:
+    redirect: wrdn/league/universities
+    redirectClose: wrdn/league/universities

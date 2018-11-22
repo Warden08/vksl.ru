@@ -1,0 +1,10 @@
+name: Players
+form: $/wrdn/league/models/player/fields.yaml
+modelClass: wrdn\League\Models\Player
+defaultRedirect: wrdn/league/players
+create:
+    redirect: 'wrdn/league/players/update/:id'
+    redirectClose: wrdn/league/players
+update:
+    redirect: wrdn/league/players
+    redirectClose: wrdn/league/players

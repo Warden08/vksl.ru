@@ -1,0 +1,4 @@
+title: Universities
+modelClass: wrdn\League\Models\University
+toolbar:
+    buttons: reorder_toolbar

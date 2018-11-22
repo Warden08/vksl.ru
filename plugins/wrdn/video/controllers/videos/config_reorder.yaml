@@ -1,0 +1,4 @@
+title: Videos
+modelClass: wrdn\video\Models\Video
+toolbar:
+    buttons: reorder_toolbar

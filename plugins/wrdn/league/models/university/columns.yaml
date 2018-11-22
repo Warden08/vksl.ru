@@ -1,0 +1,21 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    short_name:
+        label: short_name
+        type: text
+        searchable: true
+        sortable: true
+    location:
+        label: location
+        type: text
+        searchable: true
+        sortable: true

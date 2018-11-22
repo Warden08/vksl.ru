@@ -1,0 +1,4 @@
+title: Teams
+modelClass: wrdn\League\Models\Team
+toolbar:
+    buttons: reorder_toolbar

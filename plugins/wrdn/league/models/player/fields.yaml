@@ -1,0 +1,23 @@
+fields:
+    player_nickname:
+        label: 'Никнейм игрока'
+        span: auto
+        type: text
+    age:
+        label: Возраст
+        span: auto
+        type: text
+    name:
+        label: Имя
+        span: auto
+        type: text
+    last_name:
+        label: Фамилия
+        span: left
+        type: text
+    teams:
+        label: Relation
+        nameFrom: team_name
+        descriptionFrom: description
+        span: auto
+        type: relation

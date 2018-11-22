@@ -1,0 +1,30 @@
+tabs:
+    fields:
+        video_url:
+            label: 'Ссылка Youtube'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        name:
+            label: Название
+            span: auto
+            type: text
+            tab: 'Tab 2'
+        slug:
+            label: Ссылка
+            span: auto
+            preset:
+                field: name
+                type: slug
+            type: text
+            tab: 'Tab 2'
+        img:
+            label: Картинка
+            span: auto
+            type: text
+            tab: 'Tab 2'
+        date:
+            label: дата
+            span: auto
+            type: text
+            tab: 'Tab 2'
