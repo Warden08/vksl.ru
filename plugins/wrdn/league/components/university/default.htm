@@ -1,0 +1,22 @@
+{% set team = __SELF__.team %}
+<div class="table-wrapper">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for u_team in team.teams %}
+        <tr>
+            <td>{{ u_team.team_name}}</td>
+            <td>{% for player in u_team.players %}
+                    {{player.player_nickname}}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

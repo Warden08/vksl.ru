@@ -32,5 +32,9 @@ class Team extends Model
             'table' => 'wrdn_league_teams_universities',
             'order' => 'name'
         ],
+        'players' => ['Wrdn\League\Models\Player',
+            'table' => 'wrdn_league_players_teams',
+            'order' => 'player_nickname'
+        ],
     ];
 }
