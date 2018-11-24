@@ -1625,11 +1625,9 @@
 	}
 
 	body {
+		background-image: url(/themes/zwiebl-zwiebl_stellar/assets/images/bg_top.png);
+		background-position: top center;
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3109,7 +3107,7 @@
 		}
 
 		#header.alt {
-			padding: 1em 5em 1em 5em;
+			padding: 1em 0em 0em 0em;
 		}
 
 			#header.alt h1 {
@@ -3138,13 +3136,13 @@
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				display: block;
-				margin: 0 0 1.5em 0;
+				margin: 0 0 1.5em .5em;
 			}
 
 				#header.alt .logo img {
 					display: block;
-					margin: 0 auto;
-					max-width: 75%;
+					margin: 0;
+					max-width: 20%;
 				}
 
 		@media screen and (max-width: 1280px) {
