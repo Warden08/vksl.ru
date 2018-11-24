@@ -30,3 +30,6 @@
 1.0.11:
     - 'Updated table wrdn_league_universities'
     - builder_table_update_wrdn_league_universities_3.php
+1.0.12:
+    - 'Updated table wrdn_league_universities'
+    - builder_table_update_wrdn_league_universities_4.php

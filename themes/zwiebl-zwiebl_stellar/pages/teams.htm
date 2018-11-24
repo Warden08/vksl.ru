@@ -11,14 +11,11 @@ use Wrdn\League\Models\University;
     }
 ?>
 ==
-<div class="box alt">
-    <div class="row uniform">
-        {% for team in teams %}
-        <div class="4u"><span class="image fit"><img src="/storage/app/media{{team.logo}}" alt="">
-            {{team.short_name}}
-        </span>
-            <small>{{team.location}}</small>
-        </div>
-        {% endfor %}
-    </div>
-</div>
+{% for team in teams %}
+<a class="teams-list" style="background-color:{{team.team_color}};" href="/teams/{{team.slug}}">
+                <img class="icon" src="/storage/app/media{{team.logo}}" width="130">
+                <div class="name">{{team.short_name}}</br>
+                    {{team.location}}
+                </div></a>
+{% endfor %}
+/storage/app/media{{team.logo}}

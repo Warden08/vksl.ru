@@ -1625,7 +1625,8 @@
 	}
 
 	body {
-		background-image: url(/themes/zwiebl-zwiebl_stellar/assets/images/bg_top.png);
+		background-image: url("/themes/zwiebl-zwiebl_stellar/assets/images/bg_top.png") !important;
+		background-repeat: no-repeat;
 		background-position: top center;
 		background-color: #935d8c;
 	}
@@ -2676,7 +2677,7 @@
 			header.major h2:after {
 				display: block;
 				content: '';
-				width: 3.25em;
+				width: 100%;
 				height: 2px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
@@ -2894,14 +2895,35 @@
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: block;
 		width: 100%;
 		margin: 0 0 3em 0;
 		padding: 0;
 		list-style: none;
 		cursor: default;
 	}
-
+		.teams-list {
+			padding: 1.5em;
+			color: #ffffff;
+			text-align: center;
+			width: 25%;
+			height: 305px;
+			display: inline-block;
+			margin: 0;
+			text-decoration: none !important;
+			position: relative;
+		}
+			.teams-list img {
+				position: relative;
+				margin: 0 auto;
+				display: block;
+			}
+			.teams-list .name {
+				position: absolute;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
 		.statistics li {
 			-moz-flex: 1;
 			-webkit-flex: 1;
@@ -2910,7 +2932,14 @@
 			padding: 1.5em;
 			color: #ffffff;
 			text-align: center;
+			width: 25%;
+			height: 305px;
+			display: inline-block;
+			margin: 0;
 		}
+			.statistics li a {
+				text-decoration: none;
+			}
 
 			.statistics li.style1 {
 				background-color: #efa8b0;
@@ -3597,7 +3626,7 @@
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 1em 5em 1em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 

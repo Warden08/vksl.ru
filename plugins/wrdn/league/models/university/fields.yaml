@@ -29,3 +29,7 @@ fields:
         mode: file
         span: auto
         type: mediafinder
+    team_color:
+        label: 'Цвет университета'
+        span: auto
+        type: colorpicker

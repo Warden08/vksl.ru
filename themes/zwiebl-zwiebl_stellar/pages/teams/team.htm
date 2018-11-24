@@ -1,4 +1,4 @@
-title = "Teams"
+title = "Team"
 url = "/teams/:slug"
 layout = "generic"
 is_hidden = 0
@@ -6,4 +6,49 @@ is_hidden = 0
 [teamsUniversity]
 slug = "{{ :slug }}"
 ==
-{% component 'teamsUniversity' %}
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if ($this->team)
+    $this->page->title = $this->team->name;
+    //$this->page->description = str_limit($this->post->summary, 60, "...");
+}
+?>
+==
+{% if team %}
+
+{% set team = teamsUniversity.team %}
+
+<section>
+    <ul class="actions">
+        <li><a href="#" class="button ">Dota 2</a></li>
+        <li><a href="#" class="button">CS:GO</a></li>
+        <li><a href="#" class="button ">Artifact</a></li>
+        <li><a href="#" class="button">Hearthstone</a></li>
+        <li><a href="#" class="button ">Warface</a></li>
+    </ul>
+
+</section>
+<div class="table-wrapper">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for u_team in team.teams %}
+        <tr>
+            <td>{{ u_team.team_name}}</td>
+            <td>{% for player in u_team.players %}
+                    {{player.player_nickname}}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}

@@ -10,6 +10,9 @@ description = "Other Pages"
         {% partial "all_pages/navigation" %}
         <div id="main">
             <section id="content" class="main">
+            <header class="major">
+                <h2>{{ this.page.title }}</h2>
+            </header>
                 {% page %}
             </section>
         </div>
