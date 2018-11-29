@@ -2,20 +2,28 @@ title = "Главная"
 url = "/"
 layout = "pages"
 is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
 ==
-<!-- ============================================================== -->
-            <!-- Email campaign chart -->
-            <!-- ============================================================== -->
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-body" style="min-height: 900px">
-                            <h4 class="card-title">Sales Ratio</h4>
-                            <div class="sales ct-charts mt-3"></div>
+                        <div class="card-body">
+                            <div class="row" style="min-height: 900px">
+                                <div class="col-md-8">
+                                    {% component 'blogPosts' %}
+                                </div>
+                                <div class="col-md-4">
+                                       dsfdsf
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-               
-            <!-- ============================================================== -->
-            <!-- Email campaign chart -->
-            <!-- ============================================================== -->
+            </div>

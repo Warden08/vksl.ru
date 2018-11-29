@@ -1,0 +1,12 @@
+.button-t {
+    position: relative;
+    /* цвет текста, забивки и т. п. */
+}
+.button-t::before {
+    content: »;  /* чтобы сгенерировать поле */
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    background: #58a;
+    transform: skew(45deg);
+}
