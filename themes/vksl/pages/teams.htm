@@ -1,0 +1,33 @@
+title = "Команды"
+url = "/teams/"
+layout = "pages"
+is_hidden = 0
+==
+<?php
+use Wrdn\League\Models\University;
+    function onStart() {
+        $teams = University::get();
+        $this['teams'] = $teams;
+    }
+?>
+==
+<div class="col-md-8">
+    <div class="card">
+        <div class="block-header">Команды</div>
+        <div class="card-body">
+            <div class="row">
+                {% for team in teams %}
+                    <div class="col-md-4 col-sm-6 col-xs-6" style="margin-bottom: 1em">
+                        <a class="card-team" style="background-color:{{team.team_color}};" href="/teams/{{team.slug}}">
+                            <img class="icon" src="/storage/app/media{{team.logo}}" width="130">
+                            <div class="name">{{team.short_name}}</br>
+                                <span>{{team.location}}</span>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% partial 'sidebar' %}

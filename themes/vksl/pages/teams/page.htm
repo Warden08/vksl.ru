@@ -1,0 +1,38 @@
+title = "Team Page"
+url = "/teams/:slug"
+layout = "pages"
+is_hidden = 0
+
+[teamsUniversity]
+slug = "{{ :slug }}"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if ($this->team)
+$this->page->title = $this->team->name;
+//$this->page->description = str_limit($this->post->summary, 60, "...");
+}
+?>
+==
+<div class="col-md-8">
+    <div class="card">
+        <div class="block-header">{{this.page.title}}</div>
+        <div class="card-body">
+            {% if team %}
+{% set team = teamsUniversity.team %}
+
+        {% for u_team in team.teams %}
+
+            {{ u_team.team_name}}
+            {% for player in u_team.players %}
+                {{player.player_nickname}}
+                {% endfor %}
+
+        {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% partial 'sidebar' %}

@@ -1,8 +1,8 @@
 {% set posts = __SELF__.posts %}
 
 <div class="post-list card">
+    <div class="block-header">Новости</div>
     <div class="card-body">
-        <h4 class="button-t">Новости</h4>
     {% for post in posts %}
         <li>
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

@@ -1,12 +1,59 @@
-.button-t {
-    position: relative;
-    /* цвет текста, забивки и т. п. */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+@font-face{
+    font-family:RussellSquare;
+    font-style: normal;
+    font-weight:400;
+    src:url(/themes/vksl/assets/fonts/RussellSquare.otf) format('truetype')
 }
-.button-t::before {
-    content: »;  /* чтобы сгенерировать поле */
+@font-face{
+    font-family:RussellSquare;
+    font-style: normal;
+    font-weight:700;
+    src:url(/themes/vksl/assets/fonts/RussellSquareBold.ttf) format('truetype')
+}
+body {
+    font-family:'RussellSquare', sans-serif;
+}
+.block-header {
+    position: relative;
+    height: 2em;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'RussellSquare', sans-serif;
+}
+.block-header::before {
+    content: "";
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;
-    background: #58a;
-    transform: skew(45deg);
+    background: #F2F4F5;
+    transform: skew(20deg);
+}
+
+.card-team {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'RussellSquare', sans-serif;
+    color: #fff;
+    padding: 1em;
+    height: 100%;
+    display: block
+}
+.card-team .name {
+      position: relative;
+      bottom: -1em;
+}
+.card-team .name span {
+    font-size: 14px;
+}
+.card-team img {
+    max-width: 100px;
 }

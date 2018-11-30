@@ -11,19 +11,7 @@ sortOrder = "published_at desc"
 categoryPage = "blog/category"
 postPage = "blog/post"
 ==
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row" style="min-height: 900px">
-                                <div class="col-md-8">
-                                    {% component 'blogPosts' %}
-                                </div>
-                                <div class="col-md-4">
-                                       dsfdsf
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="col-md-8">
+    {% component 'blogPosts' %}
+</div>
+{% partial 'sidebar' %}
