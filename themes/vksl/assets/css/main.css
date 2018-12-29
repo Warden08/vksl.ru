@@ -14,6 +14,9 @@
 body {
     font-family:'RussellSquare', sans-serif;
 }
+a {
+    transition: filter 0.4s;
+}
 .block-header {
     position: relative;
     height: 2em;
@@ -57,3 +60,72 @@ body {
 .card-team img {
     max-width: 100px;
 }
+
+.news-entry {
+    position: relative;
+    display: block;
+    transition: filter 0.4s;
+    margin-bottom: 1rem;
+}
+.news-entry:hover a  {
+    filter: brightness( 1.3 );
+}
+.news-entry a {
+    color: #fff;
+    text-shadow: 0px 1px 2px #000000;
+    display: block;
+}
+.news-entry h4 {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+    background-color: rgba(0,0,0, .4);
+}
+.news-entry p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5em 1em;
+    font-weight: 400;
+}
+.card-game {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+.card-game:last-child {
+    margin-bottom: 10px !important;
+}
+.card-game button {
+    font-size: 15px;
+    color: inherit;
+}
+.team-player  {
+    transition: filter 0.4s;
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+}
+.team-player img {
+    border-radius: 3px;
+
+}
+.team-player:hover {
+    border-radius: 3px;
+    filter: brightness( 1.3 );
+}
+.team-player .info {
+    position: absolute;
+    left: .5em;
+    z-index: 1;
+    bottom: 1em;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 1px 2px #000000;
+}
+.team-player .info .nickname {
+
+}
+

@@ -21,3 +21,8 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
+    img:
+        label: 'Фото игрока'
+        mode: file
+        span: auto
+        type: mediafinder
